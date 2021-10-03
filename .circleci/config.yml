@@ -24,6 +24,7 @@ jobs:
           name: Backend-End Install
           command: |
             npm run backend:install
+      # Build FE and BE
       - run:
           name: Front-End Build
           command: |
@@ -32,6 +33,7 @@ jobs:
           name: Backend-End Build
           command: |
             npm run backend:build
+      # Deploy FE and BE
       - run:
           name: Deploy Front-End
           command: |
