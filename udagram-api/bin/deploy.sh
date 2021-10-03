@@ -1,0 +1,1 @@
+eb init udagram-udacity --region us-east-1 && eb use udagram-udacity-env && eb deploy udagram-udacity-env
