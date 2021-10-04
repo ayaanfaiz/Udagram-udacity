@@ -33,6 +33,15 @@ jobs:
           name: Backend-End Build
           command: |
             npm run backend:build
+      # Run FE and BE Tests
+      - run:
+          name: Front-End Test
+          command: |
+            npm run frontend:test
+      - run:
+          name: Back-End Test
+          command: |
+            npm run backend:test
       # Deploy FE and BE
       - run:
           name: Deploy Front-End
@@ -42,3 +51,10 @@ jobs:
           name: Deploy Back-End
           command: |
             npm run backend:deploy
+workflows:
+  Udagram-udacity:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master

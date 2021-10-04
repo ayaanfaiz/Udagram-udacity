@@ -16,4 +16,3 @@ It is build and then uploaded to a Elastic Beanstalk application with follows th
 
 The app is automated with a CircleCi pipeline service with the Github repository - `Udagram-udacity`.
 As soon as we push to the master branch of the Git repo, the CircleCi detects the changes and starts the pipeline to deploy the new changes.
-Current Pipeline status - [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/ayaanfaiz/Udagram-udacity)
